@@ -563,7 +563,7 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Wykonano przy pomocy {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _("Gra stworzona w celach humorystycznych. Opowiada o dramatycznej oraz zarazem poruszającej historii dramy pomiędzy chańą i emolą")
 
 
 style about_label is gui_label
@@ -987,7 +987,7 @@ screen help():
         style_prefix "help"
 
         vbox:
-            spacing 23
+            spacing 10
 
             hbox:
 
