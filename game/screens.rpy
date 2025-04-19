@@ -563,7 +563,8 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Gra stworzona w celach humorystycznych. Opowiada o dramatycznej oraz zarazem poruszającej historii dramy pomiędzy chańą i emolą")
+            text _("Gra stworzona w celach humorystycznych. Opowiada o dramatycznej oraz zarazem poruszającej historii dramy pomiędzy chańą i emolą" \
+            "\nAutorzy: Kacperix, Zdesperowany Oliwier, Chańa, Zuzia, i chat gpt za ilustracje :3")
 
 
 style about_label is gui_label
