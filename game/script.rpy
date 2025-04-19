@@ -46,11 +46,10 @@ label start:
 
     "Chana" "Napewno chcesz kontynuować?"
     menu:
-                 "Tak":
-                      jump choices1_a
-
-                 "Jestem cipą":
-                      jump choices1_b
+        "Tak":
+            jump choices1_a
+        "Jestem cipą":
+            jump choices1_b
     label choices1_a:
                 show chana talk2
                 "Chana" "No i super zapraszam"
