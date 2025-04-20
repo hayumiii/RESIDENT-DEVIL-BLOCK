@@ -1,5 +1,5 @@
-﻿image a= "images/a"
-image b= "images/b"
+﻿image a= "images/a.png"
+image b= "images/b.png"
 
 label splashscreen:
    scene white
@@ -18,10 +18,7 @@ label splashscreen:
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-#define e = Character("Eileen") - > Nie uzywamy tego narazie
-# dla chanii -> mozna to zrobic np 
-#define chana = Character("Chana", image="Chana neutral", voice_tag="Chana")
-# Tu niby tez mozna by samo zmienialo twarze itp rozne albo voice ale to musze poczytac dalej
+define e = Character("Eileen")
 
 
 # The game starts here.
@@ -33,7 +30,7 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    #scene bg room
+    scene bg room
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
@@ -44,10 +41,6 @@ label start:
     show chana talk2
 
     # These display lines of dialogue.
-    # `show` by zmienić postać -> nazwa pliku bez rozszerzenia i bez "" czyli bez .jpg itp
-    # `scene ...` by zmienić scenę
-    # Dialogi są w formacie:
-    # "Postać 1" "Dialog"
 
     "Chana" "Gra powstala w celach humorystycznych i nie ma na celu nikogo urazić."
     
@@ -70,19 +63,30 @@ label start:
     "Chana" "Napewno chcesz kontynuować?"
 
     label wybor_1:
-        menu: # Indykuje rozpoczecie wyboru 
-            "Tak": # Przykladowa opcja 1
-                jump wybor_1a # Omija dalszy kod i przeskakuje do `label wybor_1a`
-            "Jestem cipą": # Przykladowa opcja 2
-                show chana neutral
-                "Chana" "Pa"
-                $ renpy.quit() # Używane by wylaczyc gre -> W DRUGIEJ OPCJI TRZEBA UZYC `JUMP` DO MIEJSCA KTORE JEST POD TYM INACZEJ KOD LECI DALEJ I WYLACZA NAWET JAK NIE POWINNO
+        menu:
+            "Tak":
+                jump wybor_1a
+            "Jestem cipą":
+                jump wybor_1b
 
-    label wybor_1a: # Przykladowy jump, powiazanie wyboru
+    label wybor_1a:
                 show chana talk2
-                "Chana" "No i super zapraszam" # Kod sie po tym kontynuuje
+                "Chana" "No to dobrze"
+                $ learned = True
+                jump choices1_common
+   
+    label wybor_1b:
+               show chana neutral
+               $ learned = False
+               jump choices1_common
+ 
+    label choices1_common:
+               "Chana" "..."
 
-    # Powrot do main menu
-    # By użyc pythona do np wylaczenia gry mozna uzyc znaku `$` lub blok `python:` tak jak `label` itp.
+    label flags:
+               if learned:
+                     "Chana" "Zapraszam"
+               else:
+                     $renpy.quit()
 
-    $ MainMenu(confirm=False, save=True) () # Wychodzi do main menu, bez potwierdzenia i zapisując
+    
