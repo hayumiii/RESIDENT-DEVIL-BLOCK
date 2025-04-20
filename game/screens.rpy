@@ -348,7 +348,6 @@ style navigation_button_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
-define config.main_menu_music = "audio/mainmenu"
 
 screen main_menu():
 

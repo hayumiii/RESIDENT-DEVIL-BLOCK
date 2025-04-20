@@ -86,12 +86,12 @@ define config.intra_transition = dissolve
 
 ## Przejście używane po wczytaniu gry.
 
-define config.after_load_transition = None
+define config.after_load_transition = fade
 
 
 ## Przejście do menu głównego po zakończeniu gry.
 
-define config.end_game_transition = None
+define config.end_game_transition = dissolve
 
 
 ## Zmienna do ustawienia przejścia używanego podczas uruchamiania gry nie
