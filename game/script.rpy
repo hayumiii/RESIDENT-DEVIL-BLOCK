@@ -32,7 +32,7 @@
 
 
 label start:
-    #stop music # Wylaczyc muzyke
+    stop music # Wylaczyc muzyke
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
@@ -82,7 +82,8 @@ label start:
             "Jestem cipą": # Przykladowa opcja 2
                 show chana neutral
                 "Chana" "Pa"
-                $ renpy.quit() # Używane by wylaczyc gre -> W DRUGIEJ OPCJI TRZEBA UZYC `JUMP` DO MIEJSCA KTORE JEST POD TYM INACZEJ KOD LECI DALEJ I WYLACZA NAWET JAK NIE POWINNO
+                jump wybor_1b
+                #$ renpy.quit() # Używane by wylaczyc gre -> W DRUGIEJ OPCJI TRZEBA UZYC `JUMP` DO MIEJSCA KTORE JEST POD TYM INACZEJ KOD LECI DALEJ I WYLACZA NAWET JAK NIE POWINNO
 
     label wybor_1a: # Przykladowy jump, powiazanie wyboru
                 show chana talk2
@@ -107,14 +108,16 @@ label start:
                       show chana neutral
                       show chana talk1
                       "Chana" "Pizda"
-                      $ renpy.quit()   
+                      #$ renpy.quit()
+                      call fabula_test_1
+                      return # dac bez return by przelaczylo do innej fabuly i powrocilo tu by kontynuowac -> mozeb yc do flashbackow dobrze uzyte
+                      # z return jak ma juz tam zostac i bedzie budowana odtamtad kompletnie inna   
   
     label akt1:
  
     scene bedroom
 
     "Chana" "Pieśń ma była już w grobie, już chłodna"
-    
 
 
     # Powrot do main menu
