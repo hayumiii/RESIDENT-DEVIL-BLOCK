@@ -8,3 +8,5 @@ game/saves/persistent
 /game/saves
 /game/cache
 /game/cache
+/game/*.rpyc
+/game/tl/None/*.rpymc
