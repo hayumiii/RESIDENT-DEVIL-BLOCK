@@ -1,4 +1,19 @@
-﻿# The script of the game goes in this file.
+﻿image a= "images/a"
+image b= "images/b"
+
+label splashscreen:
+   scene white
+   pause 1.0
+   show a with fade
+   pause 1.0
+   hide a with dissolve
+   pause 1.0
+   show b with fade
+   pause 1.0
+   hide b with dissolve
+   return
+
+# The script of the game goes in this file.
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
@@ -7,6 +22,7 @@ define e = Character("Eileen")
 
 
 # The game starts here.
+
 
 label start:
 
