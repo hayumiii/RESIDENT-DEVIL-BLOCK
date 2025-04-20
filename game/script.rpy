@@ -111,7 +111,9 @@ label start:
                       #$ renpy.quit()
                       call fabula_test_1 # nazwa `label` takie jak np `wybor_1b` n trzeba ustawiac pliku, samo znajduje -> pliki dawac do folderu `scenariusz`
                       return # dac bez return by przelaczylo do innej fabuly i powrocilo tu by kontynuowac -> mozeb yc do flashbackow dobrze uzyte
-                      # z return jak ma juz tam zostac i bedzie budowana odtamtad kompletnie inna   
+                      # z return jak ma juz tam zostac i bedzie budowana odtamtad kompletnie inna
+                      # mozna tez zawsze uzyc `call` by powrocic do jakiegos punktu w tym pliku np fabuly sie rozdziela na nw 100 dialogow ale bedzie wspolna scenka to do jednego i pozneij znowu rozdzielic uzywajac `call` do `label`-ow ktore maja byc juz PO 
+                      # wywolaniu tej scenki czyli jak redirect jest z `label scena70:` to call `scena 71` by nie zrobila sie petla   
   
     label akt1:
  
