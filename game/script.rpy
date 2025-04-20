@@ -45,21 +45,20 @@ label start:
     "Chana" "Nadal tu jesteś..."
 
     "Chana" "Napewno chcesz kontynuować?"
-    menu:
-        "Tak":
-            jump choices1_a
-        "Jestem cipą":
-            jump choices1_b
-    label choices1_a:
-                show chana talk2
-                "Chana" "No i super zapraszam"
-    label choices1_b:
+
+    label wybor_1:
+        menu:
+            "Tak":
+                jump wybor_1a
+            "Jestem cipą":
                 show chana neutral
                 "Chana" "Pa"
+                $ renpy.quit()
 
-
-
+    label wybor_1a:
+                show chana talk2
+                "Chana" "No i super zapraszam"
 
     # Powrot do main menu
 
-    $ MainMenu(confirm=False) ()
+    $ MainMenu(confirm=False, save=True) ()
