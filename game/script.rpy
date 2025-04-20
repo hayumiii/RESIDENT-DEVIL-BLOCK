@@ -109,7 +109,7 @@ label start:
                       show chana talk1
                       "Chana" "Pizda"
                       #$ renpy.quit()
-                      call fabula_test_1
+                      call fabula_test_1 # nazwa `label` takie jak np `wybor_1b` n trzeba ustawiac pliku, samo znajduje -> pliki dawac do folderu `scenariusz`
                       return # dac bez return by przelaczylo do innej fabuly i powrocilo tu by kontynuowac -> mozeb yc do flashbackow dobrze uzyte
                       # z return jak ma juz tam zostac i bedzie budowana odtamtad kompletnie inna   
   
