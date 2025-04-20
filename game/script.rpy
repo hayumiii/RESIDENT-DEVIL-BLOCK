@@ -14,6 +14,11 @@ label splashscreen: # Wejscie do gry
 
 # The script of the game goes in this file.
 
+# imie happy -> usmiechniety
+# imie neutral -> neutralny wow
+# imie talk1 -> lekko otwarta morda
+# imie tal2 -> mocno otwarta morda
+
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
@@ -40,7 +45,7 @@ label start:
 
     scene black bg
 
-    show chana talk2
+    show chana happy
 
     # These display lines of dialogue.
     # `show` by zmienić postać -> nazwa pliku bez rozszerzenia i bez "" czyli bez .jpg itp
@@ -57,6 +62,8 @@ label start:
     show chana happy
    
     "Chana" "..."
+    
+   
 
     "Chana" "..."
  
