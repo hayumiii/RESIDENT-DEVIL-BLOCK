@@ -28,7 +28,7 @@ label start:
     show chana talk2
 
     # These display lines of dialogue.
-    # `show` by zmienić postać
+    # `show` by zmienić postać -> nazwa pliku bez rozszerzenia i bez "" czyli bez .jpg itp
     # `scene ...` by zmienić scenę
     # Dialogi są w formacie:
     # "Postać 1" "Dialog"
