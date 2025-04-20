@@ -3,11 +3,11 @@ label splashscreen: # Wejscie do gry
    scene white
    pause 1.5
    play sound "kopanie.ogg"
-   show a with fade
+   show a with dissolve
    pause 1.5
    hide a with dissolve
    pause 1.5
-   show b with fade
+   show b with dissolve
    pause 1.5
    hide b with dissolve
    return
@@ -102,11 +102,20 @@ label start:
     label flags:
                 if learned:
                       "Chana" "Zapraszam"
+                      jump akt1
                 else:
                       show chana neutral
                       show chana talk1
                       "Chana" "Pizda"
-                      $ renpy.quit()
+                      $ renpy.quit()   
+  
+    label akt1:
+ 
+    scene bedroom
+
+    "Chana" "Pieśń ma była już w grobie, już chłodna"
+    
+
 
     # Powrot do main menu
     # By użyc pythona do np wylaczenia gry mozna uzyc znaku `$` lub blok `python:` tak jak `label` itp.
