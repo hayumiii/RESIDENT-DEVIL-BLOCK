@@ -56,12 +56,10 @@ label start:
     label choices1_b:
                 show chana neutral
                 "Chana" "Pa"
-                $ renpy.quit()
-
-   
 
 
 
-    # This ends the game.
 
-    return
+    # Powrot do main menu
+
+    $ MainMenu(confirm=False) ()
