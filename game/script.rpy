@@ -1,8 +1,8 @@
 ﻿
 label splashscreen: # Wejscie do gry
-   play sound "kopanie.ogg"
    scene white
    pause 1.5
+   play sound "kopanie.ogg"
    show a with fade
    pause 1.5
    hide a with dissolve
