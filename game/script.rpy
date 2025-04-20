@@ -1,4 +1,5 @@
-﻿
+﻿define config.main_menu_music = "audio/mainmenu"
+
 label splashscreen: # Wejscie do gry
    scene white
    pause 1.5

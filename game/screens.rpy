@@ -348,6 +348,8 @@ style navigation_button_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
+define config.main_menu_music = "audio/mainmenu"
+
 screen main_menu():
 
     ## Zapewnienie, że każdy inny ekran menu zostanie zastąpiony.
@@ -412,6 +414,8 @@ style main_menu_version:
 ## Parametr przewijania może mieć wartość "None" (Brak) lub "viewport" albo
 ## "vpgrid". Ten ekran ma być używany z jednym lub większą liczbą dzieci, które
 ## są transkludowane (umieszczane) wewnątrz niego.
+
+
 
 screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
 
