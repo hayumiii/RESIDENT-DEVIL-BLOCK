@@ -19,7 +19,7 @@ define config.name = _("RESIDENT DEVIL BLOCK")
 ## Określa, czy tytuł podany powyżej jest wyświetlany na ekranie menu głównego.
 ## Ustaw to na 'False', aby ukryć tytuł.
 
-define gui.show_name = True
+define gui.show_name = False
 
 
 ## Wersja gry.

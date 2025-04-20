@@ -321,7 +321,7 @@ define gui.frame_tile = False
 ## Wysokość poziomych pasków, pasków przewijania i suwaków. Szerokość pionowych
 ## pasków, pasków przewijania i suwaków
 define gui.bar_size = 38
-define gui.scrollbar_size = 18
+define gui.scrollbar_size = 12
 define gui.slider_size = 38
 
 ## 'True' (prawda), jeśli obrazy pasków powinny być kafelkowane.

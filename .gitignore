@@ -1,0 +1,12 @@
+/log.txt
+/errors.txt
+/traceback.txt
+game/cache/bytecode-39.rpyb
+game/cache/shaders.txt
+game/saves/navigation.json
+game/saves/persistent
+/game/saves
+/game/cache
+/game/cache
+/game/*.rpyc
+/game/tl/None/*.rpymc
