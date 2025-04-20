@@ -1,4 +1,5 @@
-<video width="630" height="300" src="zasoby/trailer.mp4" controls></video> 
-
-## Resident Debil Block 
+## Resident Devil Block 
 **Najlepsza gra roku '25 i wszystkich następnych!**
+
+https://github.com/user-attachments/assets/3d43ab91-3f24-4a52-bf51-0c5c0f838019
+
