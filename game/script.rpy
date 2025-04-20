@@ -1,6 +1,4 @@
-﻿define config.main_menu_music = "audio/mainmenu"
-
-label splashscreen: # Wejscie do gry
+﻿label splashscreen: # Wejscie do gry
    scene white
    pause 1.5
    play sound "kopanie.ogg"
@@ -12,6 +10,7 @@ label splashscreen: # Wejscie do gry
    pause 1.5
    hide b with dissolve
    return
+   stop music
 
 # The script of the game goes in this file.
 
@@ -33,7 +32,7 @@ label splashscreen: # Wejscie do gry
 
 
 label start:
-
+    #stop music # Wylaczyc muzyke
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
