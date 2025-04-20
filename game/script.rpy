@@ -1,15 +1,14 @@
-﻿image a= "images/a"
-image b= "images/b"
-
-label splashscreen:
+﻿
+label splashscreen: # Wejscie do gry
+   play sound "kopanie.ogg"
    scene white
-   pause 1.0
+   pause 1.5
    show a with fade
-   pause 1.0
+   pause 1.5
    hide a with dissolve
-   pause 1.0
+   pause 1.5
    show b with fade
-   pause 1.0
+   pause 1.5
    hide b with dissolve
    return
 
