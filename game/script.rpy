@@ -79,9 +79,29 @@ label start:
 
     label wybor_1a: # Przykladowy jump, powiazanie wyboru
                 show chana talk2
-                "Chana" "No i super zapraszam" # Kod sie po tym kontynuuje
+                "Chana" "No to dobrze"
+                $ learned = True
+                jump choices1_common
+    
+    label wybor_1b:
+                show chana neutral
+                $ learned = False
+                jump choices1_common
+  
+    label choices1_common:
+                show chana neutral
+                "Chana" "..."
+ 
+    label flags:
+                if learned:
+                      "Chana" "Zapraszam"
+                else:
+                      show chana neutral
+                      show chana talk1
+                      "Chana" "Pizda"
+                      $ renpy.quit()
 
     # Powrot do main menu
     # By użyc pythona do np wylaczenia gry mozna uzyc znaku `$` lub blok `python:` tak jak `label` itp.
 
-    $ MainMenu(confirm=False, save=True) () # Wychodzi do main menu, bez potwierdzenia i zapisując
+    #$ MainMenu(confirm=False, save=True) () # Wychodzi do main menu, bez potwierdzenia i zapisując
