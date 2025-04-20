@@ -81,12 +81,16 @@ label start:
                jump choices1_common
  
     label choices1_common:
+               show chana neutral
                "Chana" "..."
 
     label flags:
                if learned:
                      "Chana" "Zapraszam"
                else:
+                     show chana neutral
+                     show chana talk1
+                     "Chana" "Pizda"
                      $renpy.quit()
 
     
