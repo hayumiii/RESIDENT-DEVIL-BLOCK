@@ -31,6 +31,7 @@ define ow = Character("Oliwierek")
 define emo = Character("Emola")
 define we = Character("Weroka")
 define zuz = Character("Zuzia")
+define nr = Character("Narrator", image="images/narrator-scr.png")
 # Tu niby tez mozna by samo zmienialo twarze itp rozne albo voice ale to musze poczytac dalej
 
 
@@ -130,14 +131,14 @@ label start:
 
     window show dissolve
 
-    "Narrator" "Pieśń Chani w ciszy drżała, skruszona,"
-    "Narrator" "Lecz zadrżała – w cieniu rozżarzona"
-    "Narrator" "Za blokadę, za zdradę, za mroku"
-    "Narrator" "Szept milczenia, co serce rozdziera"
-    "Narrator" "Zemsta! Chani już litość odbiera!"
-    "Narrator" "Zemsta, co słów nie pragnie, ni zgody"
-    "Narrator" "Na Emolę, co ciszą uwięziła"
-    "Narrator" "Chani w gniewie – duszę obnażyła!"    # Powrot do main menu
+    nr "Pieśń Chani w ciszy drżała, skruszona,"
+    nr "Lecz zadrżała – w cieniu rozżarzona"
+    nr "Za blokadę, za zdradę, za mroku"
+    nr "Szept milczenia, co serce rozdziera"
+    nr "Zemsta! Chani już litość odbiera!"
+    nr "Zemsta, co słów nie pragnie, ni zgody"
+    nr "Na Emolę, co ciszą uwięziła"
+    nr "Chani w gniewie – duszę obnażyła!"    # Powrot do main menu
     # By użyc pythona do np wylaczenia gry mozna uzyc znaku `$` lub blok `python:` tak jak `label` itp.
 
     #$ MainMenu(confirm=False, save=True) () # Wychodzi do main menu, bez potwierdzenia i zapisując
