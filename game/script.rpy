@@ -25,6 +25,7 @@
 #define chana = Character("Chana", image="Chana neutral", voice_tag="Chana", color="#ffffff" <- kolor imienia, mozna tez zrobic image i imie bedzie uzywane jako nazwa obrazu i bedzie obrazek maly zamiast imiona)... -> 
 # czy my chcemy to robic? hanik ocen jutro
 # dla chanii -> mozna to zrobic np 
+#odpowiadajac na twoje pytanie kacperixie nwm czy to przejdzie vzy n lepiej imiona bo beda  sie pojawialy postacie ktorych n mamy modeli zrobionych wiec lepiej zostac przy imionach
 define ch = Character("Chana")
 define kx = Character("Kacperix")
 define ow = Character("Oliwierek")
@@ -138,7 +139,95 @@ label start:
     nr "Zemsta! Chani już litość odbiera!"
     nr "Zemsta, co słów nie pragnie, ni zgody"
     nr "Na Emolę, co ciszą uwięziła"
-    nr "Chani w gniewie – duszę obnażyła!"    # Powrot do main menu
+    nr "Chani w gniewie – duszę obnażyła!"   
+
+    window hide dissolve
+    
+    pause 1.0
+
+    scene bedroom
+
+    pause 1.0
+
+    window show dissolve
+
+    pause 1.0
+
+    show chana talk1
+
+    ch "Chcialam zagrac i mnie zablokowala, cala historia"
+
+    show chana neutral 
+    
+    show oliwier talk1 at right
+
+    ow "I co nam do tego"
+
+    show oliwier neutral
+
+    show kacperix talk1 at left 
+
+    kx "No rel"
+
+    show kacperix neutral
+
+    show chana talk 2
+
+    ch "Zemscimy sie"
+
+    show chana neutral
+
+    show oliwier talk1 at right 
+
+    ow "Jak niby chcesz sie na niej zemscic"
+
+    show chana talk2 
+
+    ch "Przyzwiemy demona, ktory wymierzy jej kare"
+
+    show chana happy
+
+    show kacperix talk1
+
+    kx "No super pomysl a jak chcesz to niby zrobic?"
+
+    show kacperix neutral
+
+    show chana talk2
+
+    ch "Rytulal twinkow nic ci to n mowi?"
+
+    show chana happy
+
+    show olwier talk1
+
+    ow "A my ci po co niby"
+
+    show oliwier neutral
+    
+    show chana talk1
+    
+    ch "Rytulal twinkow ja twinkiem n jestem wiec rusz glowa czy cos"
+
+    show chana neutral
+    
+    show kacperix talk2
+
+    kx "A bedzie ruchanie?"
+
+    show kacperix happy
+
+    show chana talk2
+
+    ch "Wyciskanie spermy bedzie"
+
+    
+
+
+    
+    
+    
+     # Powrot do main menu
     # By użyc pythona do np wylaczenia gry mozna uzyc znaku `$` lub blok `python:` tak jak `label` itp.
 
     #$ MainMenu(confirm=False, save=True) () # Wychodzi do main menu, bez potwierdzenia i zapisując
