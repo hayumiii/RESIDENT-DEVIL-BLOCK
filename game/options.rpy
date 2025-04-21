@@ -163,7 +163,10 @@ define config.window_icon = "gui/window_icon.png"
 ## dystrybucyjne.
 
 init python:
-
+    def the_voice(identifier):
+        return "voice/" + identifier + ".ogg"
+    config.auto_voice = the_voice # dubbing
+    
     ## Poniższe funkcje przyjmują wzorce plików. Wzorce plików nie uwzględniają
     ## wielkości liter i są dopasowywane do ścieżki względem katalogu bazowego,
     ## z wiodącymi lub bez /. Jeśli pasuje wiele wzorów, używany jest pierwszy.

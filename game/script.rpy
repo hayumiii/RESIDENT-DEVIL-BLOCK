@@ -22,14 +22,19 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-#define e = Character("Eileen") - > Nie uzywamy tego narazie
+#define chana = Character("Chana", image="Chana neutral", voice_tag="Chana", color="#ffffff" <- kolor imienia, mozna tez zrobic image i imie bedzie uzywane jako nazwa obrazu i bedzie obrazek maly zamiast imiona)... -> 
+# czy my chcemy to robic? hanik ocen jutro
 # dla chanii -> mozna to zrobic np 
-#define chana = Character("Chana", image="Chana neutral", voice_tag="Chana")
+define ch = Character("Chana")
+define kx = Character("Kacperix")
+define ow = Character("Oliwierek")
+define emo = Character("Emola")
+define we = Character("Weroka")
+define zuz = Character("Zuzia")
 # Tu niby tez mozna by samo zmienialo twarze itp rozne albo voice ale to musze poczytac dalej
 
 
 # The game starts here.
-
 
 label start:
     stop music # Wylaczyc muzyke
@@ -53,27 +58,23 @@ label start:
     # Dialogi są w formacie:
     # "Postać 1" "Dialog"
 
-    "Chana" "Gra powstala w celach humorystycznych i nie ma na celu nikogo urazić."
+    ch "Gra powstala w celach humorystycznych i nie ma na celu nikogo urazić."
     
     show chana talk1
 
-    "Chana" "Jeżeli jesteś cipą to radzilabym nie kontynuować."
-   
+    ch "Jeżeli jesteś cipą to radzilabym nie kontynuować."
     show chana happy
-   
-    "Chana" "..."
-    
-   
+    extend "..."  # extend by kontynuowac dialog z zmiana twarzy czyli ze poprzedni jest dalej na ekranie tlyko jakby dopisuje ta linijke i twarz zmienia
+    # ale zeby zrobic nowe okienko jakby to normalnie ch
+    # hanik ogarnij pls najwyzej ci wytlumacze
 
-    "Chana" "..."
- 
     show chana neutral
    
-    "Chana" "..."
+    extend "..."
    
-    "Chana" "Nadal tu jesteś..."
+    ch "Nadal tu jesteś..."
 
-    "Chana" "Napewno chcesz kontynuować?"
+    ch "Napewno chcesz kontynuować?"
 
     label wybor_1:
         menu: # Indykuje rozpoczecie wyboru 
@@ -81,13 +82,13 @@ label start:
                 jump wybor_1a # Omija dalszy kod i przeskakuje do `label wybor_1a`
             "Jestem cipą": # Przykladowa opcja 2
                 show chana neutral
-                "Chana" "Pa"
+                ch "Pa"
                 jump wybor_1b
                 #$ renpy.quit() # Używane by wylaczyc gre -> W DRUGIEJ OPCJI TRZEBA UZYC `JUMP` DO MIEJSCA KTORE JEST POD TYM INACZEJ KOD LECI DALEJ I WYLACZA NAWET JAK NIE POWINNO
 
     label wybor_1a: # Przykladowy jump, powiazanie wyboru
                 show chana talk2
-                "Chana" "No to dobrze"
+                ch "No to dobrze"
                 $ learned = True
                 jump choices1_common
     
@@ -98,16 +99,16 @@ label start:
   
     label choices1_common:
                 show chana neutral
-                "Chana" "..."
+                ch "..."
  
     label flags:
                 if learned:
-                      "Chana" "Zapraszam"
+                      ch "Zapraszam"
                       jump akt1
                 else:
                       show chana neutral
                       show chana talk1
-                      "Chana" "Pizda"
+                      ch "Pizda"
                       #$ renpy.quit()
                       call fabula_test_1 # nazwa `label` takie jak np `wybor_1b` n trzeba ustawiac pliku, samo znajduje -> pliki dawac do folderu `scenariusz`
                       return # dac bez return by przelaczylo do innej fabuly i powrocilo tu by kontynuowac -> mozeb yc do flashbackow dobrze uzyte
@@ -119,7 +120,7 @@ label start:
  
     scene bedroom
 
-    "Chana" "Pieśń ma była już w grobie, już chłodna"
+    ch "Pieśń ma była już w grobie, już chłodna"
 
 
     # Powrot do main menu
