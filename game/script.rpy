@@ -117,13 +117,27 @@ label start:
                       # wywolaniu tej scenki czyli jak redirect jest z `label scena70:` to call `scena 71` by nie zrobila sie petla   
   
     label akt1:
+
+    #ogolnie to chcialam dac narratora vczyy cos ale nwm wsm wiec narazie pisze narrator potem sie zmieni najwyzej
  
-    scene bedroom
+    window hide dissolve 
+    
+    pause 1.0
 
-    ch "Pieśń ma była już w grobie, już chłodna"
+    scene black with dissolve
 
+    pause 1.0
 
-    # Powrot do main menu
+    window show dissolve
+
+    "Narrator" "Pieśń Chani w ciszy drżała, skruszona,"
+    "Narrator" "Lecz zadrżała – w cieniu rozżarzona"
+    "Narrator" "Za blokadę, za zdradę, za mroku"
+    "Narrator" "Szept milczenia, co serce rozdziera"
+    "Narrator" "Zemsta! Chani już litość odbiera!"
+    "Narrator" "Zemsta, co słów nie pragnie, ni zgody"
+    "Narrator" "Na Emolę, co ciszą uwięziła"
+    "Narrator" "Chani w gniewie – duszę obnażyła!"    # Powrot do main menu
     # By użyc pythona do np wylaczenia gry mozna uzyc znaku `$` lub blok `python:` tak jak `label` itp.
 
     #$ MainMenu(confirm=False, save=True) () # Wychodzi do main menu, bez potwierdzenia i zapisując
