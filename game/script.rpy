@@ -195,7 +195,7 @@ label start:
 
     show chana talk2
 
-    ch "Rytulal twinkow nic ci to n mowi?"
+    ch "Rytual twinkow nic ci to n mowi?"
 
     show chana happy
 
@@ -207,7 +207,7 @@ label start:
     
     show chana talk1
     
-    ch "Rytulal twinkow ja twinkiem n jestem wiec rusz glowa czy cos"
+    ch "Rytual twinkow ja twinkiem n jestem wiec rusz glowa czy cos"
 
     show chana neutral
     
