@@ -169,7 +169,7 @@ label start:
 
     kx "No rel"
 
-    show kacperix neutral at left
+    show kacperix neutral at left 
 
     show chana talk 2
 
@@ -195,7 +195,7 @@ label start:
 
     show chana talk2
 
-    ch "Rytual twinkow nic ci to n mowi?"
+    ch "Rytulal twinkow nic ci to n mowi?"
 
     show chana happy
 
@@ -207,7 +207,7 @@ label start:
     
     show chana talk1
     
-    ch "Rytual twinkow ja twinkiem n jestem wiec rusz glowa czy cos"
+    ch "Rytulal twinkow ja twinkiem n jestem wiec rusz glowa czy cos"
 
     show chana neutral
     
@@ -215,13 +215,162 @@ label start:
 
     kx "A bedzie ruchanie?"
 
-    show kacperix neutral at left
+    show kacperix happy at left
 
     show chana talk2
 
     ch "Wyciskanie spermy bedzie"
 
+    show chana neutral
+ 
+    show kacperix talk1 at left
+
+    kx "A może zamiast wzywać demony zemścimy się w jakiś inny sposob?"
     
+    show kacperix neutral at left
+
+    show oliwier talk1 at right
+
+    ow "Ale pizda z ciebie ja nie moge"
+
+    show oliwier neutral at right
+
+    show chana talk2
+
+    ch "No rel pizda"
+
+    show chana happy
+
+    show kacperix talk1 at left
+
+    kx "No to mamy iść robic ten rytuał czy nie?"
+
+    label choices_2:
+        menu:
+            "Oczywiscie ze tak":
+            jump_choices_2a
+            "Wypierdalaj jebać szatana"
+            jump choices_2b
+
+    label choices_2a:
+            show chana talk2
+            ch "No i sigma!"
+            $ learned = True 
+            jump choices2_common
+
+    label choices_2b:
+            show chana talk2
+            ch "W chuju to mam"
+            $ learned = False 
+            jump choices2_common
+
+    label choices2_common 
+            show chana happy
+            show kacperix talk1
+            kx "To idziemy czy nie?"
+            show kacperix neutral
+
+    
+    label flags:
+            if learned:
+                show chana talk2 
+                ch "No przeciez wybrali ze tak wiec idziemy"
+                show chana happy
+            
+            else:
+                show chana talk2
+                ch "Nie obchodzi mnie twoj wybor"
+                show chana neutral
+                extend "..."
+                show chana talk2
+                ch "Idziemy!"
+                
+    label egzorcyzmy  
+
+    scene dissolve 
+
+    pause 1.5
+
+    scene cipa dissolve
+
+    show chana happy
+
+    show oliwier neutral at right
+
+    show kacperix neutral at left 
+
+    show oliwier talk1 at right
+
+    ow "To tu niby tego demona bedziemy przyzywac ta?"
+
+    show oliwier neutral at right
+
+    show chana talk2 
+
+    ch "Nie niby tylko bedziemy przyzywac"
+
+    show chana talk1
+
+    ch "Szykujcie sperme..."
+
+    scene cipa fade
+
+    pause 2.0
+
+    scene cipa fade
+
+    show chana talk1
+
+    ch "Panie Boze kurwa pomoz"
+    
+    ch "Na emole klatwe zaloz"
+
+    ch "Suka nas zablokowala"
+
+    ch "A powodu nie podala"
+
+    ch "Wiec wypowiem madre slowa"
+
+    show chana talk2
+
+    ch "Niech sie dzieje wola boga"
+
+    show chana talk1
+
+    ch "Konik pedal i kurewki"
+
+    show chana talk2
+
+    ch "Lejmy sperme do konewki"
+
+    ch "Orgia kozly i walenie"
+
+    show chana talk1
+
+    ch "Squirt jest jako nawodnienie"
+
+    ch "Isc na dziwki dac dolary"
+
+    show chana talk2 
+
+    ch "Niech sie spelnia czary mary!"
+
+    with Shake( (0, 0, 0, 0), 3.0, dist=30)
+
+    show diva rizz
+
+
+            
+
+
+    
+
+
+             
+
+         
+
+
 
 
     
