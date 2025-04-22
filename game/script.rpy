@@ -163,13 +163,13 @@ label start:
 
     ow "I co nam do tego"
 
-    show oliwier neutral
+    show oliwier neutral at right
 
     show kacperix talk1 at left 
 
     kx "No rel"
 
-    show kacperix neutral
+    show kacperix neutral at left
 
     show chana talk 2
 
@@ -187,11 +187,11 @@ label start:
 
     show chana happy
 
-    show kacperix talk1
+    show kacperix talk1 at left
 
     kx "No super pomysl a jak chcesz to niby zrobic?"
 
-    show kacperix neutral
+    show kacperix neutral at left
 
     show chana talk2
 
@@ -199,11 +199,11 @@ label start:
 
     show chana happy
 
-    show olwier talk1
+    show olwier talkt at right
 
     ow "A my ci po co niby"
 
-    show oliwier neutral
+    show oliwier neutral at right
     
     show chana talk1
     
@@ -211,11 +211,11 @@ label start:
 
     show chana neutral
     
-    show kacperix talk2
+    show kacperix talk2 at left
 
     kx "A bedzie ruchanie?"
 
-    show kacperix happy
+    show kacperix neutral  at left
 
     show chana talk2
 
