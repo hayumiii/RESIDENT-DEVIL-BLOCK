@@ -11,3 +11,4 @@ game/saves/persistent
 /game/*.rpyc
 /game/tl/None/*.rpymc
 /.vscode
+*.rpyc

@@ -199,11 +199,11 @@ label start:
 
     show chana happy
 
-    show olwier talk1 at right
+    show oliwier talk1 at right
 
     ow "A my ci po co niby"
 
-    show oliwier neutral at right
+    show oliwier neutral
     
     show chana talk1
     
