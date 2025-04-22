@@ -154,7 +154,7 @@ label start:
     pause 1.0
 
     show chana talk1
-
+    
     ch "Chcialam zagrac i mnie zablokowala, cala historia"
 
     show chana neutral 
@@ -203,7 +203,7 @@ label start:
 
     ow "A my ci po co niby"
 
-    show oliwier neutral
+    show oliwier neutral at right
     
     show chana talk1
     
