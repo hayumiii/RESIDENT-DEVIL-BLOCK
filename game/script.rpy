@@ -37,7 +37,22 @@ define nr = Character("Narrator", image="images/narrator-scr.png")
 
 
 # The game starts here.
+init python:
+        def showleft_1(name): # lekko w lewo
+            miejsce = Transform(xcenter=420)
+            renpy.show(name=name, at_list=[miejsce])
 
+        def showleft(name): # mocno w lewo
+            miejsce = Transform(xcenter=320)
+            renpy.show(name=name, at_list=[miejsce])
+
+        def showright_1(name): # lekko w prawo
+            miejsce = Transform(xcenter=1560)
+            renpy.show(name=name, at_list=[miejsce])
+
+        def showright(name): # mocno w prawo
+            miejsce = Transform(xcenter=1660)
+            renpy.show(name=name, at_list=[miejsce])
 label start:
     stop music # Wylaczyc muzyke
     # Show a background. This uses a placeholder by default, but you can
@@ -372,6 +387,8 @@ label start:
 
 
 
+# $ showright(name="chana talk2") <- przykladowy syntax 
+# Zmienimy pozniej te lewo i prawo na te itp z hania
 
     
     
