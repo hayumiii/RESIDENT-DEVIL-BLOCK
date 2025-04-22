@@ -199,7 +199,7 @@ label start:
 
     show chana happy
 
-    show olwier talkt at right
+    show olwier talk1 at right
 
     ow "A my ci po co niby"
 
@@ -215,7 +215,7 @@ label start:
 
     kx "A bedzie ruchanie?"
 
-    show kacperix neutral  at left
+    show kacperix neutral at left
 
     show chana talk2
 
