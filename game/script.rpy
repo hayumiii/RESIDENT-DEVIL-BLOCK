@@ -306,7 +306,7 @@ label start:
 
     pause 1.5
 
-    scene cipa dissolve
+    scene cipa with dissolve
 
     show chana happy
 
@@ -328,11 +328,11 @@ label start:
 
     ch "Szykujcie sperme..."
 
-    scene cipa fade
+    scene cipa with fade
 
     pause 2.0
 
-    scene cipa fade
+    scene cipa with fade
 
     show chana talk1
 
