@@ -263,9 +263,9 @@ label start:
     label choices_2:
         menu:
             "Oczywiscie ze tak":
-            jump_choices_2a
-            "Wypierdalaj jebać szatana"
-            jump choices_2b
+                jump choices_2a
+            "Wypierdalaj jebać szatana":
+                jump choices_2b
 
     label choices_2a:
             show chana talk2
@@ -279,14 +279,14 @@ label start:
             $ learned = False 
             jump choices2_common
 
-    label choices2_common 
+    label choices2_common: 
             show chana happy
             show kacperix talk1
             kx "To idziemy czy nie?"
             show kacperix neutral
 
     
-    label flags:
+    label flags2:
             if learned:
                 show chana talk2 
                 ch "No przeciez wybrali ze tak wiec idziemy"
@@ -300,7 +300,7 @@ label start:
                 show chana talk2
                 ch "Idziemy!"
                 
-    label egzorcyzmy  
+    label egzorcyzmy:  
 
     scene dissolve 
 
