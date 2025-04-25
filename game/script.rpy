@@ -330,7 +330,7 @@ label start:
 
     show chana talk1
 
-    ch "Panie Boże kurwa pomóz"
+    ch "Panie Boże kurwa pomóż"
     
     ch "Na emolę klątwę załóż"
 
