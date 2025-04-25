@@ -174,17 +174,17 @@ label start:
 
     show chana neutral 
     
-    show oliwier talk1 at right
+     $ showright(name="oliwier talk1")
 
     ow "I co nam do tego"
+ 
+    $ showright(name="oliwier neutral")
 
-    show oliwier neutral at right
-
-    show kacperix talk1 at left 
+    $ showleft(name="kacperix talk1")  
 
     kx "No rel"
 
-    show kacperix neutral at left 
+    $ showleft(name="kacperix neutral")  
 
     show chana talk 2
 
@@ -192,7 +192,7 @@ label start:
 
     show chana neutral
 
-    show oliwier talk1 at right 
+     $ showright(name="oliwier talk1")
 
     ow "Jak niby chcesz sie na niej zemscic"
 
@@ -202,11 +202,11 @@ label start:
 
     show chana happy
 
-    show kacperix talk1 at left
+    $ showleft(name="kacperix talk1")  
 
     kx "No super pomysl a jak chcesz to niby zrobic?"
 
-    show kacperix neutral at left
+    $ showleft(name="kacperix neutral")  
 
     show chana talk2
 
@@ -214,11 +214,11 @@ label start:
 
     show chana happy
 
-    show oliwier talk1 at right
+     $ showright(name="oliwier talk1")
 
     ow "A my ci po co niby"
 
-    show oliwier neutral at right
+    $ showright(name="oliwier neutral")
     
     show chana talk1
     
@@ -226,11 +226,11 @@ label start:
 
     show chana neutral
     
-    show kacperix talk2 at left
+    $ showleft(name="kacperix talk2")  
 
     kx "A bedzie ruchanie?"
 
-    show kacperix happy at left
+    $ showleft(name="kacperix neutral")  
 
     show chana talk2
 
@@ -238,17 +238,17 @@ label start:
 
     show chana neutral
  
-    show kacperix talk1 at left
+    $ showleft(name="kacperix talk1")  
 
     kx "A może zamiast wzywać demony zemścimy się w jakiś inny sposob?"
     
-    show kacperix neutral at left
+    $ showleft(name="kacperix neutral")  
 
-    show oliwier talk1 at right
+    $ showright(name="oliwier talk1")
 
     ow "Ale pizda z ciebie ja nie moge"
 
-    show oliwier neutral at right
+    $ showright(name="oliwier neutral")
 
     show chana talk2
 
@@ -256,7 +256,7 @@ label start:
 
     show chana happy
 
-    show kacperix talk1 at left
+    $ showleft(name="kacperix talk1")  
 
     kx "No to mamy iść robic ten rytuał czy nie?"
 
@@ -281,9 +281,9 @@ label start:
 
     label choices2_common: 
             show chana happy
-            show kacperix talk1
+            $ showleft(name="kacperix talk1")  
             kx "To idziemy czy nie?"
-            show kacperix neutral
+            $ showleft(name="kacperix neutral")  
 
     
     label flags2:
@@ -306,19 +306,19 @@ label start:
 
     pause 1.5
 
-    scene cipa with dissolve
+    scene cipa with fide
 
     show chana happy
 
-    show oliwier neutral at right
+    $ showright(name="oliwier neutral")
 
-    show kacperix neutral at left 
+    $ showleft(name="kacperix neutral")  
 
-    show oliwier talk1 at right
+    $ showright(name="oliwier talk1")
 
     ow "To tu niby tego demona bedziemy przyzywac ta?"
 
-    show oliwier neutral at right
+    $ showright(name="oliwier neutral")
 
     show chana talk2 
 
@@ -331,8 +331,6 @@ label start:
     scene cipa with fade
 
     pause 2.0
-
-    scene cipa with fade
 
     show chana talk1
 
@@ -372,7 +370,15 @@ label start:
 
     with Shake( (0, 0, 0, 0), 3.0, dist=30)
 
-    show diva rizz
+    hide chana talk2 with dissolve
+
+    show diva talk1
+
+    zuz "Czesc pedaly"
+
+
+
+
 
 
             
