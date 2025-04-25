@@ -350,7 +350,7 @@ label start:
 
     show chana talk2
 
-    ch "Lejmy sperme do konewki"
+    ch "Lejmy spermę do konewki"
 
     ch "Orgia kozły i walenie"
 
