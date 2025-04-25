@@ -186,7 +186,7 @@ label start:
 
     $ showleft(name="kacperix neutral")  
 
-    show chana talk 2
+    show chana talk2
 
     ch "Zemscimy sie"
 
@@ -306,7 +306,7 @@ label start:
 
     pause 1.5
 
-    scene cipa with fide
+    scene cipa with fade
 
     show chana happy
 
