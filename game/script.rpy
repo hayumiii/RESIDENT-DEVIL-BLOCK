@@ -322,7 +322,7 @@ label start:
 
     show chana talk1
 
-    ch "Szykujcie sperme..."
+    ch "Szykujcie spermę..."
 
     scene cipa with fade
 
