@@ -126,8 +126,8 @@ label start:
                       show chana neutral
                       show chana talk1
                       ch "Pizda"
-                      #$ renpy.quit()
-                      call fabula_test_1 # nazwa `label` takie jak np `wybor_1b` n trzeba ustawiac pliku, samo znajduje -> pliki dawac do folderu `scenariusz`
+                      $ renpy.quit()
+                      # nazwa `label` takie jak np `wybor_1b` n trzeba ustawiac pliku, samo znajduje -> pliki dawac do folderu `scenariusz`
                       return # dac bez return by przelaczylo do innej fabuly i powrocilo tu by kontynuowac -> mozeb yc do flashbackow dobrze uzyte
                       # z return jak ma juz tam zostac i bedzie budowana odtamtad kompletnie inna
                       # mozna tez zawsze uzyc `call` by powrocic do jakiegos punktu w tym pliku np fabuly sie rozdziela na nw 100 dialogow ale bedzie wspolna scenka to do jednego i pozneij znowu rozdzielic uzywajac `call` do `label`-ow ktore maja byc juz PO 
@@ -302,17 +302,15 @@ label start:
                 
     label egzorcyzmy:  
 
-    scene dissolve 
+    scene cipa with fade
 
     pause 1.5
-
-    scene cipa with fade
 
     show chana happy
 
     $ showright(name="oliwier neutral")
 
-    $ showleft(name="kacperix neutral")  
+    $ showleft(name="kacperix neutral")
 
     $ showright(name="oliwier talk1")
 
@@ -372,28 +370,149 @@ label start:
 
     hide chana talk2 with dissolve
 
-    show diva talk1
+    show diva talk
 
     zuz "Czesc pedaly"
 
+    hide diva talk
 
+    scene cipa with fade
 
+    $ showright(name="oliwier neutral") 
 
+    $ showright_1(name="chana happy") 
 
+    $ showleft_1(name="kacperix neutral")
 
+    show diva rizz
+
+    $ showright_1(name="chana talk1") 
+
+    ch "O kurwa udalo sie"
+
+    $ showright_1(name="chana happy") 
+
+    show diva talk
+
+    zuz "No a czemu mialoby sie nie udac, ze nieby nie istnieje tak?"
+
+    $ showright_1(name="chana talk2") 
+
+    ch "No taka hot jestes ze az nie z tego swiata"
+
+    $ showright_1(name="chana happy") 
+
+    $ showright(name="oliwier talk1")
+
+    ow "Bo ona jest nie z tego swiata geniuszko"
+
+    $ showright(name="oliwier neutral")
+
+    $ showleft(name="diva talk")
+
+    zuz "Na chuj mnie przywoliscie"
+
+    show diva neutral
+
+    $ showright_1(name="chana talk1")
+
+    ch "Chcemy sie na kims sie zemscila"
             
+    $ showright_1(name="chana neutral")
 
+    show diva talk
+
+    zuz "Po chuj"
+             
+    show diva neutral
+         
+    $ showleft(name="kacperix talk1")
+
+    kx "Bo nas zablokowała"
+
+    $ showleft(name="kacperix neutral")
+
+    show diva talk
+
+    zuz "No to rzeczywiście zajebisty powód"
+
+    zuz "Ale pomogę wam skoro już mnie przywołaliście..."
+
+    zuz "Żebym mogła jej cokolwiek zrobić potrzebuje..."
+
+    zuz "Jej włosów"
+
+    zuz "Krwii"
+
+    zuz "Sperme"
+
+    zuz "Węgiel z kopalni Wujek"
+
+    zuz "Wykopany przez Emole bo inaczej to na chuj mi"
+
+    show diva neutral
+
+    $ showright_1(name="chana talk2")
+
+    ch "Dobra ez w chuj"
+
+    $ showright(name="oliwier talk2")
+
+    ow "To co najpierw"
+
+    $ showright(name="oliwier happy")
+
+    $ showleft(name="kacperix talk2")
+
+    kx "Włosy najłatwiejsze"
+
+    $ showleft(name="kacperix neutral")
+
+    show diva talk
+     
+    zuz "Idzcie z bogiem dzieci..."
+
+    scene cipa fade 
+
+    pause 1.5
+
+    scene szkola2 fade 
+
+    show chana happy
+
+    $ showright(name=kacperix neutral)
+
+    $ showleft(name=oliwier happy)
+
+    show chana talk1
+
+    ch "To jakiekolwiek pomysły JAK utniemy włosy Emoli?"
+
+    show chana neutral
+
+    $ showleft(name=oliwier talk1)
+
+    ow "Możemy jakoś Weroke przekonać, żeby nam pomogła"
 
     
 
 
-             
-
-         
 
 
 
-# $ showright(name="chana talk2") <- przykladowy syntax 
+
+
+
+
+
+
+
+
+
+
+
+
+# $ showright(name="chana talk2") <-przykladowy syntax 
 # Zmienimy pozniej te lewo i prawo na te itp z hania
 
     
