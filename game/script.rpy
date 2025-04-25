@@ -472,11 +472,11 @@ label start:
      
     zuz "Idzcie z bogiem dzieci..."
 
-    scene cipa fade 
+    scene cipa with fade 
 
     pause 1.5
 
-    scene szkola2 fade 
+    scene szkola2 with fade 
 
     show chana happy
 
