@@ -174,7 +174,7 @@ label start:
 
     show chana neutral 
     
-     $ showright(name="oliwier talk1")
+    $ showright(name="oliwier talk1")
 
     ow "I co nam do tego"
  
@@ -192,7 +192,7 @@ label start:
 
     show chana neutral
 
-     $ showright(name="oliwier talk1")
+    $ showright(name="oliwier talk1")
 
     ow "Jak niby chcesz sie na niej zemscic"
 
@@ -214,7 +214,7 @@ label start:
 
     show chana happy
 
-     $ showright(name="oliwier talk1")
+    $ showright(name="oliwier talk1")
 
     ow "A my ci po co niby"
 
