@@ -480,9 +480,9 @@ label start:
 
     show chana happy
 
-    $ showright(name=kacperix neutral)
+    $ showright(name="kacperix neutral")
 
-    $ showleft(name=oliwier happy)
+    $ showleft(name="oliwier happy")
 
     show chana talk1
 
@@ -490,7 +490,7 @@ label start:
 
     show chana neutral
 
-    $ showleft(name=oliwier talk1)
+    $ showleft(name="oliwier talk1")
 
     ow "Możemy jakoś Weroke przekonać, żeby nam pomogła"
 
