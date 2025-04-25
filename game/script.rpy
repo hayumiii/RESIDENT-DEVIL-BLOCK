@@ -74,12 +74,11 @@ label start:
     # `scene ...` by zmienić scenę
     # Dialogi są w formacie:
     # "Postać 1" "Dialog"
-
-    ch "Gra powstala w celach humorystycznych i nie ma na celu nikogo urazić."
+    ch "Gra powstała w celach humorystycznych i nie ma na celu nikogo urazić."
     
     show chana talk1
 
-    ch "Jeżeli jesteś cipą to radzilabym nie kontynuować."
+    ch "Jeżeli jesteś cipą to radziłabym nie kontynuować."
     show chana happy
     extend "..."  # extend by kontynuowac dialog z zmiana twarzy czyli ze poprzedni jest dalej na ekranie tlyko jakby dopisuje ta linijke i twarz zmienia
     # ale zeby zrobic nowe okienko jakby to normalnie ch
@@ -170,7 +169,7 @@ label start:
 
     show chana talk1
     
-    ch "Chcialam zagrac i mnie zablokowala, cala historia"
+    ch "Chciałam zagrać i mnie zablokowała, cała historia"
 
     show chana neutral 
     
@@ -188,29 +187,28 @@ label start:
 
     show chana talk2
 
-    ch "Zemscimy sie"
+    ch "Zemścimy sie"
 
     show chana neutral
 
     $ showright(name="oliwier talk1")
 
-    ow "Jak niby chcesz sie na niej zemscic"
+    ow "Jak niby chcesz się na niej zemścić"
 
     show chana talk2 
 
-    ch "Przyzwiemy demona, ktory wymierzy jej kare"
-
+    ch "Przyzwiemy demona, który wymierzy jej karę"
     show chana happy
 
     $ showleft(name="kacperix talk1")  
 
-    kx "No super pomysl a jak chcesz to niby zrobic?"
+    kx "No super pomysł a jak chcesz to niby zrobić?"
 
     $ showleft(name="kacperix neutral")  
 
     show chana talk2
 
-    ch "Rytulal twinkow nic ci to n mowi?"
+    ch "Rytuał twinków, nic ci to nie mówi?"
 
     show chana happy
 
@@ -222,31 +220,31 @@ label start:
     
     show chana talk1
     
-    ch "Rytulal twinkow ja twinkiem n jestem wiec rusz glowa czy cos"
+    ch "Rytuał twinków a ja twinkiem nie jestem więc rusz głową czy coś"
 
     show chana neutral
     
     $ showleft(name="kacperix talk2")  
 
-    kx "A bedzie ruchanie?"
+    kx "A będzie ruchanie?"
 
     $ showleft(name="kacperix neutral")  
 
     show chana talk2
 
-    ch "Wyciskanie spermy bedzie"
+    ch "Wyciskanie spermy będzie"
 
     show chana neutral
  
     $ showleft(name="kacperix talk1")  
 
-    kx "A może zamiast wzywać demony zemścimy się w jakiś inny sposob?"
+    kx "A może zamiast wzywać demony zemścimy się w jakiś inny sposób?"
     
     $ showleft(name="kacperix neutral")  
 
     $ showright(name="oliwier talk1")
 
-    ow "Ale pizda z ciebie ja nie moge"
+    ow "Ale pizda z ciebie ja nie mogę"
 
     $ showright(name="oliwier neutral")
 
@@ -258,11 +256,11 @@ label start:
 
     $ showleft(name="kacperix talk1")  
 
-    kx "No to mamy iść robic ten rytuał czy nie?"
+    kx "No to mamy iść robić ten rytuał czy nie?"
 
     label choices_2:
         menu:
-            "Oczywiscie ze tak":
+            "Oczywiście ze tak":
                 jump choices_2a
             "Wypierdalaj jebać szatana":
                 jump choices_2b
@@ -289,12 +287,12 @@ label start:
     label flags2:
             if learned:
                 show chana talk2 
-                ch "No przeciez wybrali ze tak wiec idziemy"
+                ch "No przecież wybrali że tak więc idziemy"
                 show chana happy
             
             else:
                 show chana talk2
-                ch "Nie obchodzi mnie twoj wybor"
+                ch "Nie obchodzi mnie twój wybor"
                 show chana neutral
                 extend "..."
                 show chana talk2
@@ -314,13 +312,13 @@ label start:
 
     $ showright(name="oliwier talk1")
 
-    ow "To tu niby tego demona bedziemy przyzywac ta?"
+    ow "To tu niby tego demona będziemy przyzywać ta?"
 
     $ showright(name="oliwier neutral")
 
     show chana talk2 
 
-    ch "Nie niby tylko bedziemy przyzywac"
+    ch "Nie niby tylko będziemy przyzywać"
 
     show chana talk1
 
@@ -332,39 +330,39 @@ label start:
 
     show chana talk1
 
-    ch "Panie Boze kurwa pomoz"
+    ch "Panie Boże kurwa pomóz"
     
-    ch "Na emole klatwe zaloz"
+    ch "Na emolę klątwę załóż"
 
-    ch "Suka nas zablokowala"
+    ch "Suka nas zablokowała"
 
-    ch "A powodu nie podala"
+    ch "A powodu nie podała"
 
-    ch "Wiec wypowiem madre slowa"
+    ch "Więc wypowiem mądre słowa"
 
     show chana talk2
 
-    ch "Niech sie dzieje wola boga"
+    ch "Niech się dzieję wola boga"
 
     show chana talk1
 
-    ch "Konik pedal i kurewki"
+    ch "Konik pedał i kurewki"
 
     show chana talk2
 
     ch "Lejmy sperme do konewki"
 
-    ch "Orgia kozly i walenie"
+    ch "Orgia kozły i walenie"
 
     show chana talk1
 
     ch "Squirt jest jako nawodnienie"
 
-    ch "Isc na dziwki dac dolary"
+    ch "Iść na dziwki dać dolary"
 
     show chana talk2 
 
-    ch "Niech sie spelnia czary mary!"
+    ch "Niech się spełnią czary mary!"
 
     with Shake( (0, 0, 0, 0), 3.0, dist=30)
 
@@ -372,7 +370,7 @@ label start:
 
     show diva talk
 
-    zuz "Czesc pedaly"
+    zuz "Cześć pedały"
 
     hide diva talk
 
@@ -388,35 +386,35 @@ label start:
 
     $ showright_1(name="chana talk1") 
 
-    ch "O kurwa udalo sie"
+    ch "O kurwa udało się"
 
     $ showright_1(name="chana happy") 
 
     show diva talk
 
-    zuz "No a czemu mialoby sie nie udac, ze nieby nie istnieje tak?"
+    zuz "No a czemu miałoby się nie udać, że niby nie istnieję tak?"
 
     $ showright_1(name="chana talk2") 
 
-    ch "No taka hot jestes ze az nie z tego swiata"
+    ch "No taka hot jesteś że aż nie z tego świata"
 
     $ showright_1(name="chana happy") 
 
     $ showright(name="oliwier talk1")
 
-    ow "Bo ona jest nie z tego swiata geniuszko"
+    ow "Bo ona nie jest z tego świata geniuszko"
 
     $ showright(name="oliwier neutral")
 
     $ showleft(name="diva talk")
 
-    zuz "Na chuj mnie przywoliscie"
+    zuz "Na chuj mnie przywołaliście"
 
     show diva neutral
 
     $ showright_1(name="chana talk1")
 
-    ch "Chcemy sie na kims sie zemscila"
+    ch "Chcemy się na kimś zemścić"
             
     $ showright_1(name="chana neutral")
 
@@ -438,17 +436,17 @@ label start:
 
     zuz "Ale pomogę wam skoro już mnie przywołaliście..."
 
-    zuz "Żebym mogła jej cokolwiek zrobić potrzebuje..."
+    zuz "Żebym mogła jej cokolwiek zrobić potrzebuję..."
 
     zuz "Jej włosów"
 
     zuz "Krwii"
 
-    zuz "Sperme"
+    zuz "Spermy"
 
-    zuz "Węgiel z kopalni Wujek"
+    zuz "Węgla z kopalni Wujek"
 
-    zuz "Wykopany przez Emole bo inaczej to na chuj mi"
+    zuz "Wykopanego przez Emolę bo inaczej to na chuj mi"
 
     show diva neutral
 
@@ -470,7 +468,7 @@ label start:
 
     show diva talk
      
-    zuz "Idzcie z bogiem dzieci..."
+    zuz "Idźcie z bogiem dzieci..."
 
     scene cipa with fade 
 
@@ -492,7 +490,7 @@ label start:
 
     $ showleft(name="oliwier talk1")
 
-    ow "Możemy jakoś Weroke przekonać, żeby nam pomogła"
+    ow "Możemy jakoś Werokę przekonać, żeby nam pomogła"
 
     
 
