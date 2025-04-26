@@ -38,16 +38,16 @@ define nr = Character("Narrator", image="images/narrator-scr.png")
 
 # The game starts here.
 init python:
-        def showleft_1(name): # lekko w lewo
-            miejsce = Transform(xcenter=420)
+        def showleft(name): # mocno w lewo
+            miejsce = Transform(xcenter=360)
             renpy.show(name=name, at_list=[miejsce])
 
-        def showleft(name): # mocno w lewo
-            miejsce = Transform(xcenter=320)
+        def showleft_1(name): # lekko w lewo
+            miejsce = Transform(xcenter=660)
             renpy.show(name=name, at_list=[miejsce])
 
         def showright_1(name): # lekko w prawo
-            miejsce = Transform(xcenter=1560)
+            miejsce = Transform(xcenter=1360)
             renpy.show(name=name, at_list=[miejsce])
 
         def showright(name): # mocno w prawo
@@ -380,9 +380,9 @@ label start:
 
     $ showright_1(name="chana happy") 
 
-    $ showleft_1(name="kacperix neutral")
+    $ showleft(name="kacperix neutral")
 
-    show diva rizz
+    $ showleft_1(name="diva rizz")
 
     $ showright_1(name="chana talk1") 
 
@@ -390,7 +390,7 @@ label start:
 
     $ showright_1(name="chana happy") 
 
-    show diva talk
+    $ showleft_1(name="diva talk")
 
     zuz "No a czemu miałoby się nie udać, że niby nie istnieję tak?"
 
@@ -406,11 +406,11 @@ label start:
 
     $ showright(name="oliwier neutral")
 
-    $ showleft(name="diva talk")
+    $ showleft_1(name="diva talk")
 
     zuz "Na chuj mnie przywołaliście"
 
-    show diva neutral
+    $ showleft_1(name="diva neutral")
 
     $ showright_1(name="chana talk1")
 
@@ -418,11 +418,11 @@ label start:
             
     $ showright_1(name="chana neutral")
 
-    show diva talk
+    $ showleft_1(name="diva talk")
 
     zuz "Po chuj"
              
-    show diva neutral
+    $ showleft_1(name="diva neutral")
          
     $ showleft(name="kacperix talk1")
 
@@ -430,7 +430,7 @@ label start:
 
     $ showleft(name="kacperix neutral")
 
-    show diva talk
+    $ showleft_1(name="diva talk")
 
     zuz "No to rzeczywiście zajebisty powód"
 
@@ -446,9 +446,12 @@ label start:
 
     zuz "Węgla z kopalni Wujek"
 
-    zuz "Wykopanego przez Emolę bo inaczej to na chuj mi"
+    $ showleft_1(name="diva rizz")
+    extend "..."
+    $ showleft_1(name="diva talk")
+    extend  "\nWykopanego przez Emolę bo inaczej to na chuj mi"
 
-    show diva neutral
+    $ showleft_1(name="diva neutral")
 
     $ showright_1(name="chana talk2")
 
@@ -466,7 +469,7 @@ label start:
 
     $ showleft(name="kacperix neutral")
 
-    show diva talk
+    $ showleft_1(name="diva talk")
      
     zuz "Idźcie z bogiem dzieci..."
 
