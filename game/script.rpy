@@ -146,6 +146,8 @@ label start:
 
     window show dissolve
 
+    play sound "horror.mp3"
+
     nr "Pieśń Chani w ciszy drżała, skruszona,"
     nr "Lecz zadrżała – w cieniu rozżarzona"
     nr "Za blokadę, za zdradę, za mroku"
@@ -166,16 +168,37 @@ label start:
     window show dissolve
 
     pause 1.0
+    
+    scene black with fade
+    nr "Grupa siedzi w milczeniu. Emola zniknęła. Nikt nie wie, dlaczego."
+
+
+    $ showright(name="oliwier neutral") 
 
     show chana talk1
-    
-    ch "Chciałam zagrać i mnie zablokowała, cała historia"
+
+    $ showleft(name="kacperix neutral")
+
+
+    ch "Emola to zamknęła. Nas. Jak drzwi."
+    $ showright(name="oliwier talk1") 
+    ow "Może... może ktoś jej coś zrobił? Może ktoś z nas?"
+    $ showright(name="oliwier neutral") 
+    ch "Nie, to nie... To nie o nas chodzi. Albo może właśnie chodzi. Ale milczy. Nic nie powiedziała. Jakbyśmy zniknęli dla niej. Po prostu – hop, nie ma."
+    $ showleft(name="kacperix talk1") 
+    kx "Nie wierzę, że to koniec. Tak się nie kończy przyjaźń. Bez słowa?"
+    $ showleft(name="kacperix neutral") 
+    ch "Wiem, że nie da się, ale… Gdyby się dało. To bym pogadała."
+    show chana neutral
+    ch "(POV) Ona była inna. Może to lepiej że jej nie ma."
 
     show chana neutral 
+
+    scene bedroom
     
     $ showright(name="oliwier talk1")
 
-    ow "I co nam do tego"
+    ow "Więc co teraz..."
  
     $ showright(name="oliwier neutral")
 
@@ -187,13 +210,13 @@ label start:
 
     show chana talk2
 
-    ch "Zemścimy sie"
+    ch "Zemścimy sie i odwrócimy to."
 
     show chana neutral
 
     $ showright(name="oliwier talk1")
 
-    ow "Jak niby chcesz się na niej zemścić"
+    ow "Jak niby chcesz to zrobić?.."
 
     show chana talk2 
 
@@ -202,37 +225,37 @@ label start:
 
     $ showleft(name="kacperix talk1")  
 
-    kx "No super pomysł a jak chcesz to niby zrobić?"
+    kx "Nie przesadzasz?"
 
     $ showleft(name="kacperix neutral")  
 
     show chana talk2
 
-    ch "Rytuał twinków, nic ci to nie mówi?"
+    ch "Nie. Ona musi do nas wrócić. Dla nas"
 
     show chana happy
 
     $ showright(name="oliwier talk1")
 
-    ow "A my ci po co niby"
+    ow "Nie wiem czy chce się w to mieszać"
 
     $ showright(name="oliwier neutral")
     
     show chana talk1
     
-    ch "Rytuał twinków a ja twinkiem nie jestem więc rusz głową czy coś"
+    ch "Zrobimy rytuał"
 
     show chana neutral
     
     $ showleft(name="kacperix talk2")  
 
-    kx "A będzie ruchanie?"
+    kx "Jak niby"
 
     $ showleft(name="kacperix neutral")  
 
     show chana talk2
 
-    ch "Wyciskanie spermy będzie"
+    ch "Mam.. już pewny pomysł w głowie"
 
     show chana neutral
  
@@ -244,13 +267,14 @@ label start:
 
     $ showright(name="oliwier talk1")
 
-    ow "Ale pizda z ciebie ja nie mogę"
+    ch "Ale pizda z ciebie ja nie mogę"
 
     $ showright(name="oliwier neutral")
 
     show chana talk2
 
-    ch "No rel pizda"
+    ow "..."
+    ow "Może i nie jestem jakoś przekonany ale zaufam chanii"
 
     show chana happy
 
@@ -287,7 +311,7 @@ label start:
     label flags2:
             if learned:
                 show chana talk2 
-                ch "No przecież wybrali że tak więc idziemy"
+                ch "Idziemy. Już nie możemy się wycofać."
                 show chana happy
             
             else:
@@ -312,31 +336,44 @@ label start:
 
     $ showright(name="oliwier talk1")
 
-    ow "To tu niby tego demona będziemy przyzywać ta?"
+    ow "To tu.."
 
     $ showright(name="oliwier neutral")
 
     show chana talk2 
 
-    ch "Nie niby tylko będziemy przyzywać"
+    ch "Zgadza się"
 
     show chana talk1
 
-    ch "Szykujcie spermę..."
+    ch "A teraz.. szykujcie się"
 
     scene cipa with fade
 
     pause 2.0
 
-    show chana talk1
+    show expression glitch("chana neutral"):
+        pause 1.0
+        glitch("chana talk1", offset=60, randomKey=None)
+        pause 0.1
+        pause 1.0
+        glitch("chana talk2", offset=60, randomKey=None)
+        pause 0.1
+        pause 1.0
+        glitch("chana neutral", offset=60, randomKey=None)
+        pause 0.1
+        glitch("chana talk1", offset=60, randomKey=None)
 
-    ch "Panie Boże kurwa pomóż"
+    ch "Panie Boże pomóż nam"
     
-    ch "Na emolę klątwę załóż"
+    ch "By Emole ściągnąć wraz"
 
     ch "Suka nas zablokowała"
 
+    $ showright(name="emola evil")
+
     ch "A powodu nie podała"
+    hide emola evil
 
     ch "Więc wypowiem mądre słowa"
 
@@ -346,23 +383,23 @@ label start:
 
     show chana talk1
 
-    ch "Konik pedał i kurewki"
+    ch "Blokada, ciemność i kontakt"
 
     show chana talk2
 
-    ch "Lejmy spermę do konewki"
+    ch "Niech będzie z dala od nas"
 
-    ch "Orgia kozły i walenie"
+    ch "I niech przyjdzie istota obiecana"
 
     show chana talk1
 
-    ch "Squirt jest jako nawodnienie"
+    ch "W grymuarach zapisana"
 
-    ch "Iść na dziwki dać dolary"
+    ch "Oświecić nasze życie by.."
 
     show chana talk2 
 
-    ch "Niech się spełnią czary mary!"
+    ch "Już nigdy nie spotkał nas taki czyn!"
 
     with Shake( (0, 0, 0, 0), 3.0, dist=30)
 
@@ -370,7 +407,7 @@ label start:
 
     show diva talk
 
-    zuz "Cześć pedały"
+    zuz "To mnie wzywaliście?"
 
     hide diva talk
 
@@ -436,26 +473,84 @@ label start:
 
     zuz "Ale pomogę wam skoro już mnie przywołaliście..."
 
-    zuz "Żebym mogła jej cokolwiek zrobić potrzebuję..."
+    zuz "Czekajcie, a o kogo wam chodzi?"
+    extend "..."
 
-    zuz "Jej włosów"
+    $ showright_1(name="chana talk1")
+    ch "O.."
+    extend "Emole."
 
-    zuz "Krwii"
+    scene black with dissolve
+    scene black
+    show diva rizz 
+    zuz "heh..."
+    show diva talk
+    zuz "Oni nie wiedza w co sie pakują"
+    show diva rizz
+    extend "..."
+    show diva talk
+    zuz "Ale dobrze, pomoge im"
+    extend "..."
+    zuz "\n Przynajmniej żeby odkryć prawdę..."
+    scene black with fade
+    scene cipa with fade
 
-    zuz "Spermy"
+    $ showright(name="oliwier neutral") 
+
+    $ showright_1(name="chana happy") 
+
+    $ showleft(name="kacperix neutral")
+
+    $ showleft_1(name="diva rizz")
+
+    $ showright_1(name="chana neutral") 
+
+    zuz "Jesteście pewni?"
+
+    $ showright_1(name="chana talk2") 
+
+    ch "Tak."
+    $ showleft_1(name="diva talk")
+    $ showright_1(name="chana neutral")
+
+    zuz "Dobrze."
+
+    zuz "W takim razie.."
+
+    zuz "Potrzebuję 5-ciu rzeczy"
 
     zuz "Węgla z kopalni Wujek"
 
-    $ showleft_1(name="diva rizz")
+    zuz "Jej włosy"
+
+    zuz "4 świeczki"
+
+    zuz "Kości zwierzęcę"
     extend "..."
-    $ showleft_1(name="diva talk")
-    extend  "\nWykopanego przez Emolę bo inaczej to na chuj mi"
+    zuz "Ale zmielone!"
 
-    $ showleft_1(name="diva neutral")
+    zuz "i..."
 
-    $ showright_1(name="chana talk2")
+    zuz "Księge Blokady"
 
-    ch "Dobra ez w chuj"
+    zuz "Księge B̶̩̥̈́l̶͈͖̇̆ô̸̲k̵͊ͅą̸̅d̷̥́y̵̨̿͋"
+
+    with Shake( (0, 0, 0, 0), 3.0, dist=30)
+
+    scene black with fade
+    show emola evil
+    pause 1.5
+    scene cipa with dissolve
+
+    $ showright(name="oliwier neutral") 
+
+    $ showright_1(name="chana happy") 
+
+    $ showleft(name="kacperix neutral")
+
+    $ showleft_1(name="diva rizz")
+
+    $ showright_1(name="chana neutral") 
 
     $ showright(name="oliwier talk2")
 
@@ -468,12 +563,38 @@ label start:
     kx "Włosy najłatwiejsze"
 
     $ showleft(name="kacperix neutral")
+    hide diva rizz
 
-    $ showleft_1(name="diva talk")
-     
+    show expression glitch("diva neutral"):
+        pause 1.0
+        glitch("diva rizz", offset=60, randomKey=None)
+        pause 0.1
+        pause 1.0
+        glitch("diva neutral", offset=60, randomKey=None)
+        pause 0.1
+        pause 1.0
+        glitch("emola evil", offset=60, randomKey=None)
+        pause 0.1
+        glitch("diva rizz", offset=60, randomKey=None)
+        pause 0.1
+        pause 1.0
+        glitch("diva neutral", offset=60, randomKey=None)
+        pause 0.1
+        pause 1.0
+        glitch("emola evil", offset=60, randomKey=None)
+        glitch("diva rizz", offset=60, randomKey=None)
+        pause 0.1
+        pause 1.0
+        glitch("emola evil", offset=60, randomKey=None)
+        pause 0.1
+        pause 1.0
+        glitch("diva neutral", offset=60, randomKey=None)
+
+
     zuz "Idźcie z bogiem dzieci..."
 
     scene cipa with fade 
+
 
     pause 1.5
 
@@ -494,6 +615,100 @@ label start:
     $ showleft(name="oliwier talk1")
 
     ow "Możemy jakoś Werokę przekonać, żeby nam pomogła"
+
+    ch "Ja sie tym zajme"
+    ch "Wy idzcie"
+
+    hide oliwier talk1
+    hide kacperix neutral
+    hide chana neutral
+
+    scene szkola1 with fade
+
+    show chana neutral:
+        xalign 1.0 yalign 0.0
+        linear 5   xalign 0.25 yalign 0.75
+
+    $ showleft(name="chana neutral")
+    pause 1.0
+
+    show chana neutral at center 
+    with move
+
+    ch "Gdzie ona..."
+
+    $ showright(name="chana neutral")
+    with move
+    
+    scene classroom1 with dissolve
+
+    $ showleft(name="weroka talk2")
+    $ showright(name="chana neutral")
+    pause 1.0
+    hide chana neutral
+    show chana talk2
+    with move
+    ch "O TU JESTES!"
+    $ showleft_1(name="weroka talk1")
+    with move
+    we "hmm?"
+    ch "Potrzebuje czegoś od ciebie ALE PROSZE"
+    extend ".. PROSZE NIE MYSL ZE JESTEM DZIWNA"
+    we "bitch ja juz to mysle od dawna no ale okej"
+    show chana neutral
+    ch "..."
+    show chana talk1
+    ch "Idac dalej!"
+    ch "Emola jest w szkole?"
+    $ showleft_1(name="weroka talk2")
+    we ".. no tak?"
+    $ showleft_1(name="weroka neutral")
+    ch "Pamiętasz jak ona nas zablokowała?"
+    $ showleft_1(name="weroka talk1")
+    we "Nom.."
+    $ showleft_1(name="weroka neutral")
+    ch "heh.."
+    ch "Chcemy się lekko zemścić na niej i mamy już plan.."
+    $ showleft_1(name="weroka talk1")
+    we "Ale po co"
+    ch "Nie no żartowałam! Ale czy mogłabyś mi załatwić by ona poszła do toalety na przerwie?"
+    $ showleft_1(name="weroka neutral")
+    we "..."
+    ch "Bardzo prosze?.."
+    $ showleft_1(name="weroka talk1")
+    we "Troche dziwne ale dobra"
+    we "Jak chcesz"
+    show chana talk2
+    ch "DZIEKUJEEEE!!!!"
+    show chana happy    
+
+    scene toaleta
+
+    nr "Chańa zdecydowała się... "
+
+    window hide
+    show expression glitch("emola neutral") as emo:
+        pause 1.0
+        glitch("Wiem. O wszystkim wiem.", crop=True)
+        xalign 0.5
+        yalign 0.5
+        pause 4.0
+        glitch("emola neutral", offset=60, randomKey=None)
+        pause 0.1
+        pause 1.0
+    ##scene toaleta 
+    pause 5.0
+    hide expression glitch("emola neutral")
+    show emola neutral
+    nr "..."
+    emo "..."
+    scene black with dissolve
+    scene toaleta
+    show chana neutral
+    ch "Dobra teraz czekać na emole"
+
+
+
 
     
 
