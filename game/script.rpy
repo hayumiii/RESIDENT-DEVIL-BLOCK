@@ -146,7 +146,8 @@ label start:
 
     window show dissolve
 
-    play sound "horror.mp3"
+    $ renpy.music.set_volume(0.1)
+    play music "horror.mp3"
 
     nr "Pieśń Chani w ciszy drżała, skruszona,"
     nr "Lecz zadrżała – w cieniu rozżarzona"
