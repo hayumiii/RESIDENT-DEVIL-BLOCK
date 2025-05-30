@@ -26,13 +26,13 @@
 # czy my chcemy to robic? hanik ocen jutro
 # dla chanii -> mozna to zrobic np 
 #odpowiadajac na twoje pytanie kacperixie nwm czy to przejdzie vzy n lepiej imiona bo beda  sie pojawialy postacie ktorych n mamy modeli zrobionych wiec lepiej zostac przy imionach
-define ch = Character("Chana")
-define kx = Character("Kacperix")
-define ow = Character("Oliwierek")
-define emo = Character("Emola")
-define we = Character("Weroka")
-define zuz = Character("Zuzia")
-define nr = Character("Narrator", image="images/narrator-scr.png")
+define ch = Character("ханя")
+define kx = Character("кацперикс")
+define ow = Character("Оливерек")
+define emo = Character("Эмоля")
+define we = Character("Верока")
+define zuz = Character("Зузя")
+define nr = Character("Нарратор", image="images/narrator-scr.png")
 # Tu niby tez mozna by samo zmienialo twarze itp rozne albo voice ale to musze poczytac dalej
 
 
@@ -74,11 +74,11 @@ label start:
     # `scene ...` by zmienić scenę
     # Dialogi są w formacie:
     # "Postać 1" "Dialog"
-    ch "Gra powstała w celach humorystycznych i nie ma na celu nikogo urazić."
+    ch "игра создана в целах хумористических и не чтобы кого-то обижать"
     
     show chana talk1
 
-    ch "Jeżeli jesteś cipą to radziłabym nie kontynuować."
+    ch "Как ты пизда то лучше не продолжай"
     show chana happy
     extend "..."  # extend by kontynuowac dialog z zmiana twarzy czyli ze poprzedni jest dalej na ekranie tlyko jakby dopisuje ta linijke i twarz zmienia
     # ale zeby zrobic nowe okienko jakby to normalnie ch
@@ -88,17 +88,17 @@ label start:
    
     extend "..."
    
-    ch "Nadal tu jesteś..."
+    ch "Ты еще тут..."
 
-    ch "Napewno chcesz kontynuować?"
+    ch "Ты уверен что хочешь продолжать?"
 
     label wybor_1:
         menu: # Indykuje rozpoczecie wyboru 
-            "Tak": # Przykladowa opcja 1
+            "Да": # Przykladowa opcja 1
                 jump wybor_1a # Omija dalszy kod i przeskakuje do `label wybor_1a`
-            "Jestem cipą": # Przykladowa opcja 2
+            "Я пизда": # Przykladowa opcja 2
                 show chana neutral
-                ch "Pa"
+                ch "Пока"
                 jump wybor_1b
                 #$ renpy.quit() # Używane by wylaczyc gre -> W DRUGIEJ OPCJI TRZEBA UZYC `JUMP` DO MIEJSCA KTORE JEST POD TYM INACZEJ KOD LECI DALEJ I WYLACZA NAWET JAK NIE POWINNO
 
@@ -424,13 +424,13 @@ label start:
 
     $ showright_1(name="chana talk1") 
 
-    ch "O kurwa udało się"
+    ch "Udało się.."
 
     $ showright_1(name="chana happy") 
 
     $ showleft_1(name="diva talk")
 
-    zuz "No a czemu miałoby się nie udać, że niby nie istnieję tak?"
+    zuz "A czemu miałoby się nie udać? że niby nie istnieję tak?"
 
     $ showright_1(name="chana talk2") 
 
@@ -440,13 +440,13 @@ label start:
 
     $ showright(name="oliwier talk1")
 
-    ow "Bo ona nie jest z tego świata geniuszko"
+    ow "Chania to nie czas na takie rzeczy."
 
     $ showright(name="oliwier neutral")
 
     $ showleft_1(name="diva talk")
 
-    zuz "Na chuj mnie przywołaliście"
+    zuz "Dlaczego mnie przywołaliście"
 
     $ showleft_1(name="diva neutral")
 
@@ -458,7 +458,7 @@ label start:
 
     $ showleft_1(name="diva talk")
 
-    zuz "Po chuj"
+    zuz "?"
              
     $ showleft_1(name="diva neutral")
          
@@ -470,9 +470,9 @@ label start:
 
     $ showleft_1(name="diva talk")
 
-    zuz "No to rzeczywiście zajebisty powód"
+    zuz "Ehh no średni powód ale dobra"
 
-    zuz "Ale pomogę wam skoro już mnie przywołaliście..."
+    zuz "pomogę wam skoro już mnie przywołaliście..."
 
     zuz "Czekajcie, a o kogo wam chodzi?"
     extend "..."

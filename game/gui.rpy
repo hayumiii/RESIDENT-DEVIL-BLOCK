@@ -1,4 +1,4 @@
-﻿################################################################################
+################################################################################
 ## Inicjalizacja
 ################################################################################
 
@@ -66,13 +66,13 @@ define gui.interface_text_color = '#FEC5EA'
 ## Czcionki i ich rozmiary #####################################################
 
 ## Czcionka używana do tekstu w grze.
-define gui.text_font = "fonts/Switzal.ttf"
+define gui.text_font = "fonts/SourceHanSansLite.ttf"
 
 ## Czcionka używana do nazw postaci.
-define gui.name_text_font = "fonts/Sweetie Summer.ttf"
+define gui.name_text_font = "fonts/SourceHanSansLite.ttf"
 
 ## Czcionka używana w tekście poza grą.
-define gui.interface_text_font = "fonts/Super Cottage.ttf"
+define gui.interface_text_font = "fonts/SourceHanSansLite.ttf"
 
 ## Rozmiar normalnego tekstu dialogowego.
 define gui.text_size = 30

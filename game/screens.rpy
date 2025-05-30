@@ -39,7 +39,6 @@ style label_text is gui_text:
 style prompt_text is gui_text:
     properties gui.text_properties("prompt")
 
-
 style bar:
     ysize gui.bar_size
     left_bar Frame("gui/bar/left.png", gui.bar_borders, tile=gui.bar_tile)
@@ -755,6 +754,12 @@ screen preferences():
                     textbutton _("Tekst niewidoczny") action Preference("skip", "toggle")
                     textbutton _("Tekst po wyborze") action Preference("after choices", "toggle")
                     textbutton _("Przejścia") action InvertSelected(Preference("transitions", "toggle"))
+
+                vbox:
+                    style_prefix "pref"
+                    label _("Language")
+                    textbutton "Polski" action Language(None) #default language of the VN your would be Chinese (simplified or tradtitional?)
+                    textbutton "Русский" action Language("russian")
 
                 ## Miejsce na dodatkowe vboksy typu "radio_pref" lub
                 ## "check_pref", aby dodać dodatkowe preferencje zdefiniowane
