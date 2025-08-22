@@ -26,13 +26,13 @@
 # czy my chcemy to robic? hanik ocen jutro
 # dla chanii -> mozna to zrobic np 
 #odpowiadajac na twoje pytanie kacperixie nwm czy to przejdzie vzy n lepiej imiona bo beda  sie pojawialy postacie ktorych n mamy modeli zrobionych wiec lepiej zostac przy imionach
-define ch = Character("ханя")
-define kx = Character("кацперикс")
-define ow = Character("Оливерек")
-define emo = Character("Эмоля")
-define we = Character("Верока")
-define zuz = Character("Зузя")
-define nr = Character("Нарратор", image="images/narrator-scr.png")
+define ch = Character("Chania")
+define kx = Character("Kacperix")
+define ow = Character("Oliwierek")
+define emo = Character("Emola")
+define we = Character("Weroka")
+define zuz = Character("Zuzia")
+define nr = Character("Narrator", image="images/narrator-scr.png")
 # Tu niby tez mozna by samo zmienialo twarze itp rozne albo voice ale to musze poczytac dalej
 
 
@@ -205,7 +205,7 @@ label start:
 
     $ showleft(name="kacperix talk1")  
 
-    kx "No rel"
+    kx "..."
 
     $ showleft(name="kacperix neutral")  
 
@@ -268,7 +268,7 @@ label start:
 
     $ showright(name="oliwier talk1")
 
-    ch "Ale pizda z ciebie ja nie mogę"
+    ch "Nie znasz się na zabawie, ona musi zapłacić."
 
     $ showright(name="oliwier neutral")
 
@@ -281,24 +281,24 @@ label start:
 
     $ showleft(name="kacperix talk1")  
 
-    kx "No to mamy iść robić ten rytuał czy nie?"
+    kx "Idziemy robić ten rytuał?"
 
     label choices_2:
         menu:
-            "Oczywiście ze tak":
+            "Tak":
                 jump choices_2a
-            "Wypierdalaj jebać szatana":
+            "To zły pomysł...":
                 jump choices_2b
 
     label choices_2a:
             show chana talk2
-            ch "No i sigma!"
+            ch "To idziemy"
             $ learned = True 
             jump choices2_common
 
     label choices_2b:
             show chana talk2
-            ch "W chuju to mam"
+            ch "...Nie ma innego wyjścia"
             $ learned = False 
             jump choices2_common
 
@@ -317,7 +317,7 @@ label start:
             
             else:
                 show chana talk2
-                ch "Nie obchodzi mnie twój wybor"
+                ch "Musimy to zrobić. Ja to muszę zrobić dla spokoju"
                 show chana neutral
                 extend "..."
                 show chana talk2
@@ -430,7 +430,7 @@ label start:
 
     $ showleft_1(name="diva talk")
 
-    zuz "A czemu miałoby się nie udać? że niby nie istnieję tak?"
+    zuz "A czemu miałoby się nie udać?"
 
     $ showright_1(name="chana talk2") 
 
@@ -470,9 +470,9 @@ label start:
 
     $ showleft_1(name="diva talk")
 
-    zuz "Ehh no średni powód ale dobra"
+    zuz "Mhm.. słucham dalej"
 
-    zuz "pomogę wam skoro już mnie przywołaliście..."
+    zuz "Zaintrygowaliście mnie swoim nietypowym wyborem muszę przyznać.."
 
     zuz "Czekajcie, a o kogo wam chodzi?"
     extend "..."
@@ -484,9 +484,9 @@ label start:
     scene black with dissolve
     scene black
     show diva rizz 
-    zuz "heh..."
+    zuz "Heh..."
     show diva talk
-    zuz "Oni nie wiedza w co sie pakują"
+    zuz "Oni nie wiedzą w co się pakują"
     show diva rizz
     extend "..."
     show diva talk
@@ -557,11 +557,24 @@ label start:
 
     ow "To co najpierw"
 
+    ch "Poczekajcie... a co to jest ta.."
+    ch "Księga Blokady"
+
+    with Shake( (0, 0, 0, 0), 3.0, dist=30)
+
+    zuz "To jest księga z legendy krążącej w okolicy"
+    zuz "Była napisana przez... samego Boga"
+
+    $ showright_1(name="chana happy")
+
+    ch "(pov) Blokada.. przez samego Boga?"
+    extend "Coś mi tu nie gra" 
+
     $ showright(name="oliwier happy")
 
     $ showleft(name="kacperix talk2")
 
-    kx "Włosy najłatwiejsze"
+    kx "Dobra to włosy najłatwiejsze mi się wydaje?"
 
     $ showleft(name="kacperix neutral")
     hide diva rizz
@@ -609,7 +622,7 @@ label start:
 
     show chana talk1
 
-    ch "To jakiekolwiek pomysły JAK utniemy włosy Emoli?"
+    ch "To jakiekolwiek pomysły macie? jak utniemy włosy Emoli?"
 
     show chana neutral
 
@@ -619,6 +632,7 @@ label start:
 
     ch "Ja sie tym zajme"
     ch "Wy idzcie"
+    ch "Poszukajcie informacji o tej legendzie."
 
     hide oliwier talk1
     hide kacperix neutral
@@ -649,17 +663,16 @@ label start:
     hide chana neutral
     show chana talk2
     with move
-    ch "O TU JESTES!"
+    ch "O hej weroka.!"
     $ showleft_1(name="weroka talk1")
     with move
     we "hmm?"
-    ch "Potrzebuje czegoś od ciebie ALE PROSZE"
-    extend ".. PROSZE NIE MYSL ZE JESTEM DZIWNA"
-    we "bitch ja juz to mysle od dawna no ale okej"
+    ch "Potrzebuje czegoś od ciebie ważnego"
+    extend ".. Ale bądź wyrozumiała"
+    we "no słucham?"
     show chana neutral
     ch "..."
     show chana talk1
-    ch "Idac dalej!"
     ch "Emola jest w szkole?"
     $ showleft_1(name="weroka talk2")
     we ".. no tak?"
@@ -672,6 +685,9 @@ label start:
     ch "Chcemy się lekko zemścić na niej i mamy już plan.."
     $ showleft_1(name="weroka talk1")
     we "Ale po co"
+
+    show chana happy
+
     ch "Nie no żartowałam! Ale czy mogłabyś mi załatwić by ona poszła do toalety na przerwie?"
     $ showleft_1(name="weroka neutral")
     we "..."
@@ -706,8 +722,90 @@ label start:
     scene black with dissolve
     scene toaleta
     show chana neutral
-    ch "Dobra teraz czekać na emole"
+    ch "Dobra... to teraz nie pozostaje mi nic innego niż czekać"
+    extend "... Az sie ona zjawi"
 
+    scene black with fade
+
+    nr "*30 minut później*"
+
+    scene toaleta with fade
+
+    show emola neutral:
+        xalign 1.0 yalign 0.0
+        linear 5   xalign 0.25 yalign 0.75
+
+    show emola neutral at center
+    with move
+
+    $ showleft(name="emola neutral")
+    pause 0.5
+
+    emo "..."
+
+    $ showright(name="chana neutral")
+    with move
+
+    emo "W końcu można odpocząć"
+
+    $ showright(name="chana neutral")
+    pause 0.5
+
+
+    $ showleft(name="chana neutral")
+    with move
+
+    show chana talk1
+    ch "hej emola.."
+
+    show emola talk1
+    emo "Co ty tu do cholery robisz"
+
+    ch "cii.."
+
+    scene wlosy with fade
+    pause 0.2
+    scene wlosy2 with fade
+    pause 0.5
+    scene szkola1 with dissolve
+
+    $ showright(name="chana neutral")
+    pause 0.5
+
+
+    $ showleft(name="chana neutral")
+    with move
+
+    scene szkola2
+
+    show oliwier talk1
+    $ showright(name="chana talk1")
+    $ showleft(name="kacperix neutral")
+
+    ch "Uciekamy."
+
+    scene bedroom with dissolve
+
+
+    $ showright(name="oliwier neutral") 
+
+    show chana talk1
+
+    $ showleft(name="kacperix neutral")
+
+    $ showright(name="oliwier talk1")
+
+    ow "Masz te wlosy?"
+
+    ch "Tak!. Udało się"
+
+    $ showleft(name="kacperix talk1")
+
+    kx "To co teraz?"
+
+    ch "...Możemy iśc po--"
+    ch "A czekajcie"
+    ch "Co sie dowiedzieliscie o tej legendzie?"
 
 
 
