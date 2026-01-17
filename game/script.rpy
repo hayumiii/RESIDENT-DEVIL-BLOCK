@@ -74,11 +74,11 @@ label start:
     # `scene ...` by zmienić scenę
     # Dialogi są w formacie:
     # "Postać 1" "Dialog"
-    ch "игра создана в целах хумористических и не чтобы кого-то обижать"
+    ch "игра создана в целах юмористических и не чтобы кого-то обижать"
     
     show chana talk1
 
-    ch "Как ты пизда то лучше не продолжай"
+    ch "Если ты пизда лучше не продолжай"
     show chana happy
     extend "..."  # extend by kontynuowac dialog z zmiana twarzy czyli ze poprzedni jest dalej na ekranie tlyko jakby dopisuje ta linijke i twarz zmienia
     # ale zeby zrobic nowe okienko jakby to normalnie ch
@@ -151,7 +151,7 @@ label start:
 
     nr "Pieśń Chani w ciszy drżała, skruszona,"
     nr "Lecz zadrżała – w cieniu rozżarzona"
-    nr "Za blokadę, za zdradę, za mroku"
+    nr "Za blokadę, za zdradę, w mroku narodzona"
     nr "Szept milczenia, co serce rozdziera"
     nr "Zemsta! Chani już litość odbiera!"
     nr "Zemsta, co słów nie pragnie, ni zgody"
@@ -384,7 +384,7 @@ label start:
 
     show chana talk1
 
-    ch "Blokada, ciemność i kontakt"
+    ch "Blokada, ciemność i niekontakt"
 
     show chana talk2
 
@@ -606,6 +606,7 @@ label start:
 
 
     zuz "Idźcie z bogiem dzieci..."
+    zuz "Albo i bez niej."
 
     scene cipa with fade 
 
@@ -723,7 +724,7 @@ label start:
     scene toaleta
     show chana neutral
     ch "Dobra... to teraz nie pozostaje mi nic innego niż czekać"
-    extend "... Az sie ona zjawi"
+    extend "... Aż sie ona zjawi"
 
     scene black with fade
 
