@@ -1,4 +1,4 @@
-﻿################################################################################
+################################################################################
 ## Inicjalizacja
 ################################################################################
 
@@ -64,6 +64,15 @@ define gui.interface_text_color = '#FEC5EA'
 
 
 ## Czcionki i ich rozmiary #####################################################
+
+## Czcionka używana do tekstu w grze. то руские
+#define gui.text_font = "fonts/SourceHanSansLite.ttf"
+
+## Czcionka używana do nazw postaci.
+#define gui.name_text_font = "fonts/SourceHanSansLite.ttf"
+
+## Czcionka używana w tekście poza grą.
+#define gui.interface_text_font = "fonts/SourceHanSansLite.ttf"
 
 ## Czcionka używana do tekstu w grze.
 define gui.text_font = "fonts/Switzal.ttf"

@@ -50,6 +50,7 @@ define build.name = "RESIDENTDEVILBLOCK"
 define config.has_sound = True
 define config.has_music = True
 define config.has_voice = True
+define config.default_music_volume = 0.1
 
 
 ## Aby umożliwić użytkownikowi odtworzenie dźwięku testowego na kanale
